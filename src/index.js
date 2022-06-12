@@ -270,20 +270,4 @@ class Testa{
     }
 }
 }
-let tester = new Testa();
-var a;
-
-tester.addTest(function(){      
-    this.a = [1,2,3,4,5];
-    return tester.testAssertArray(a);
-},"testAssertArray");
-tester.addTest(function(){      
-    
-    return tester.testAssertBoolean(this.a);
-});
-tester.addTest(function(){      
-    
-    return tester.testAssertFalsy(!this.a);
-});
-tester.Execute();
-tester.getResults();
+module.exports = Testa;
